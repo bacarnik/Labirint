@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body { 
+    height: 100%; 
+    background-color: black; 
+}
+#svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.dot {
+    fill: #FFFF00; /* Pure yellow */
+    width: 5px;
+    height: 5px;
+    opacity: 0;
+    rx: 2.5;
+    filter: drop-shadow(0 0 3px #FFA500);
+}
+@keyframes appear {
+    0% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1.3); }
+    100% { opacity: 1; transform: scale(1); }
+}
