@@ -1,3 +1,15 @@
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+const img = new Image();
+img.src = 'img/maze.svg';
+
+img.onload = function() {
+  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+};
+
+
+//
 const dotsGroup = document.getElementById('pacman-dots');
 
 const GRID_SIZE = 16;
